@@ -63,7 +63,7 @@ async def enhance_image(img_url: str, model: Model) -> str:
     image.save(imageData := BytesIO(), format="jpeg")
     img_b64 = base64.b64encode(imageData.getvalue()).decode()
 
-    url_push = "http://134.175.32.157:9999/api/predict"
+    url_push = "https://hf.space/embed/balh5/aifangda/api/predict/"
     data = {
         "fn_index": 0,
         "data": [
